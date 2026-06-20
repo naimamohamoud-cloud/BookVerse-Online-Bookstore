@@ -1,5 +1,6 @@
 /* =========================
    BOOKVERSE STYLESHEET
+   Burgundy Edition
    ========================= */
 
 /* General Page Styling */
@@ -8,18 +9,21 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    line-height: 1.6;
 }
+
 
 /* Navbar */
 
 .custom-navbar {
-    background-color: #8B5E3C;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #800020;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand {
+    font-size: 1.6rem;
     font-weight: bold;
-    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .nav-link {
@@ -27,84 +31,98 @@ body {
 }
 
 .nav-link:hover {
-    color: #f5deb3 !important;
+    color: #f4d6d6 !important;
 }
 
-/* Main Headings */
+/* Headings */
 
 h1 {
-    color: #8B5E3C;
+    color: #800020;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 h2 {
-    color: #8B5E3C;
+    color: #800020;
     font-weight: bold;
 }
 
 h3 {
-    color: #8B5E3C;
+    color: #800020;
+    margin-bottom: 15px;
 }
 
-/* Paragraph Styling */
+/* Hero Section */
 
 .lead {
     color: #555;
+    font-size: 1.2rem;
 }
 
-/* Featured Book Cards */
+/* Cards */
 
 .card {
     border: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
 }
 
 .card-title {
-    color: #8B5E3C;
+    color: #800020;
     font-weight: bold;
 }
 
 /* Buttons */
 
 .btn-primary {
-    background-color: #8B5E3C;
-    border-color: #8B5E3C;
+    background-color: #800020;
+    border-color: #800020;
 }
 
 .btn-primary:hover {
-    background-color: #6F4A2F;
-    border-color: #6F4A2F;
+    background-color: #660019;
+    border-color: #660019;
 }
 
-/* Contact Form */
+/* Forms */
 
 .form-control:focus {
-    border-color: #8B5E3C;
-    box-shadow: 0 0 5px rgba(139, 94, 60, 0.4);
+    border-color: #800020;
+    box-shadow: 0 0 5px rgba(128, 0, 32, 0.4);
 }
 
 /* Footer */
 
 footer {
+    background-color: #800020;
+    color: white;
     margin-top: 50px;
-    background-color: #8B5E3C;
 }
 
 footer p {
     margin: 0;
 }
 
-/* Responsive Adjustments */
+/* Lists */
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
 
 @media (max-width: 768px) {
 
     h1 {
         font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
     }
 
     .navbar-brand {
