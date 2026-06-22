@@ -113,6 +113,14 @@ ul li {
     margin-bottom: 8px;
 }
 
+/* Book Cover Images */
+.card-img-top {
+    height: 250px;
+    object-fit: contain;
+}
+
+
+
 /* Responsive Design */
 
 @media (max-width: 768px) {
