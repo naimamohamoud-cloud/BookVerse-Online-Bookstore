@@ -86,31 +86,59 @@
 
     <div class="container my-5">
 
-    <form>
+  <form id="contactForm">
 
-        <div class="mb-3">
-            <label class="form-label">Full Name</label>
-            <input type="text" class="form-control"placeholder="Enter your full name">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Email Address</label>
-            <input type="email" class="form-control"placeholder="Enter your full name">
-        </div>
+    <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            placeholder="Enter your full name">
 
-        <div class="mb-3">
-            <label class="form-label">Subject</label>
-            <input type="text" class="form-control"placeholder="Enter the subject">
-        </div>
+        <small id="nameError" class="error-message"></small>
+    </div>
 
-        <div class="mb-3">
-            <label class="form-label">Message</label>
-            <textarea class="form-control" rows="5"placeholder="Type your message here"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">
-            Send Message
-        </button>
+    <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email address">
 
-    </form>
+        <small id="emailError" class="error-message"></small>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Subject</label>
+        <input
+            type="text"
+            class="form-control"
+            id="subject"
+            placeholder="Enter the subject">
+
+        <small id="subjectError" class="error-message"></small>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            placeholder="Type your message here"></textarea>
+
+        <small id="messageError" class="error-message"></small>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Send Message
+    </button>
+
+</form>  
+
+   
 
 </div>
       <div class="container my-5">

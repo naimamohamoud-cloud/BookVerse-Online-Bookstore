@@ -115,10 +115,19 @@ ul li {
 
 /* Book Cover Images */
 .card-img-top {
-    height: 250px;
+    height: 300px;
     object-fit: contain;
 }
 
+/* Inline Validation */
+
+.error-message {
+    color: #800020;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: block;
+    margin-top: 5px;
+}
 
 
 /* Responsive Design */
