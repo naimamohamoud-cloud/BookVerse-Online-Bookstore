@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVerse - Book Details</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            BookVerse
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="books.html">Books</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="categories.html">Categories</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<div class="container my-5">
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <img id="bookImage"
+                 class="img-fluid rounded"
+                 alt="Book Cover">
+        </div>
+
+        <div class="col-md-8">
+
+            <h1 id="bookTitle"></h1>
+
+            <h3>Author</h3>
+            <p id="bookAuthor"></p>
+
+            <h3>Price</h3>
+            <p id="bookPrice"></p>
+
+            <h3>Description</h3>
+            <p id="bookDescription"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="text-white text-center p-3 mt-5">
+    <p>&copy; 2026 BookVerse Online Bookstore. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+const books = {
+
+    "alchemist": {
+        title: "The Alchemist",
+        author: "Paulo Coelho",
+        price: "KES 1,200",
+        image: "images/alchemist.jpg",
+        description: "A timeless story about following your dreams and discovering your life's purpose."
+    },
+
+    "atomic-habits": {
+        title: "Atomic Habits",
+        author: "James Clear",
+        price: "KES 1,500",
+        image: "images/atomic-habits.jpg",
+        description: "Practical strategies for building good habits and breaking bad ones."
+    },
+
+    "thousand-splendid-suns": {
+        title: "A Thousand Splendid Suns",
+        author: "Khaled Hosseini",
+        price: "KES 1,350",
+        image: "images/a-thousand-splendid-suns.jpg",
+        description: "A moving story of friendship, sacrifice, and resilience set in Afghanistan."
+    },
+
+    "rich-dad-poor-dad": {
+        title: "Rich Dad Poor Dad",
+        author: "Robert Kiyosaki",
+        price: "KES 1,100",
+        image: "images/rich-dad-poor-dad.jpg",
+        description: "A personal finance classic that teaches financial literacy and wealth building."
+    },
+
+    "of-jade-and-dragons": {
+        title: "Of Jade and Dragons",
+        author: "Amber Chen",
+        price: "KES 1,250",
+        image: "images/of-jade-and-dragons.jpg",
+        description: "A fantasy adventure about ancient dragon magic, hidden secrets, and justice."
+    },
+"the-ultimate-guide-to-rebuilding-civilization": {
+    title: "The Ultimate Guide to Rebuilding Civilization",
+    author: "Lewis Dartnell",
+    price: "KES 1,800",
+    image: "images/the-ultimate-guide-to-rebuilding-civilization.jpg",
+    description: "A guide to the knowledge and inventions needed to rebuild society after a collapse."
+},
+
+    "pride-and-prejudice": {
+        title: "Pride and Prejudice",
+        author: "Jane Austen",
+        price: "KES 1,100",
+        image: "images/pride-and-prejudice.jpg",
+        description: "A classic novel about love, family expectations, and social class."
+    },
+
+    "as-long-as-the-lemon-trees-grow": {
+    title: "As Long as the Lemon Trees Grow",
+    author: "Zoulfa Katouh",
+    price: "KES 1,400",
+    image: "images/as-long-as-the-lemon-trees-grow.jpg",
+    description: "A moving story of hope, love, and survival during the Syrian civil war."
+},
+
+    "crime-and-punishment": {
+        title: "Crime and Punishment",
+        author: "Fyodor Dostoevsky",
+        price: "KES 1,300",
+        image: "images/crime-and-punishment.jpg",
+        description: "A psychological masterpiece exploring guilt, morality, and redemption."
+    },
+
+    "to-kill-a-mockingbird": {
+        title: "To Kill a Mockingbird",
+        author: "Harper Lee",
+        price: "KES 1,300",
+        image: "images/to-kill-a-mockingbird.jpg",
+        description: "A classic novel about justice, morality, and compassion."
+    }
+
+};
+
+const params = new URLSearchParams(window.location.search);
+
+const selectedBook = params.get("book");
+
+if (books[selectedBook]) {
+
+    document.getElementById("bookTitle").textContent =
+        books[selectedBook].title;
+
+    document.getElementById("bookAuthor").textContent =
+        books[selectedBook].author;
+
+    document.getElementById("bookPrice").textContent =
+        books[selectedBook].price;
+
+    document.getElementById("bookDescription").textContent =
+        books[selectedBook].description;
+
+    document.getElementById("bookImage").src =
+        books[selectedBook].image;
+}
+
+</script>
+
+</body>
+</html>
