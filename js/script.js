@@ -64,3 +64,90 @@ window.addEventListener("load", function () {
     });
 
 });
+// ===============================
+// BOOK CATEGORIES
+// ===============================
+
+const categories = {
+
+    fiction: [
+        {
+            title: "The Alchemist",
+            image: "images/alchemist.jpg",
+            price: "KES 1,200",
+            details: "book-details.html?book=alchemist"
+        },
+        {
+            title: "A Thousand Splendid Suns",
+            image: "images/a-thousand-splendid-suns.jpg",
+            price: "KES 1,350",
+            details: "book-details.html?book=thousand-splendid-suns"
+        },
+        {
+            title: "Of Jade and Dragons",
+            image: "images/of-jade-and-dragons.jpg",
+            price: "KES 1,250",
+            details: "book-details.html?book=of-jade-and-dragons"
+        }
+    ],
+
+    nonfiction: [
+        {
+            title: "The Ultimate Guide to Rebuilding Civilization",
+            image: "images/the-ultimate-guide-to-rebuilding-civilization.jpg",
+            price: "KES 1,800",
+            details: "book-details.html?book=the-ultimate-guide-to-rebuilding-civilization"
+        }
+    ],
+
+    selfdevelopment: [
+        {
+            title: "Atomic Habits",
+            image: "images/atomic-habits.jpg",
+            price: "KES 1,500",
+            details: "book-details.html?book=atomic-habits"
+        },
+        {
+            title: "Rich Dad Poor Dad",
+            image: "images/rich-dad-poor-dad.jpg",
+            price: "KES 1,100",
+            details: "book-details.html?book=rich-dad-poor-dad"
+        }
+    ],
+
+    academic: [
+        {
+            title: "The Ultimate Guide to Rebuilding Civilization",
+            image: "images/the-ultimate-guide-to-rebuilding-civilization.jpg",
+            price: "KES 1,800",
+            details: "book-details.html?book=the-ultimate-guide-to-rebuilding-civilization"
+        }
+    ],
+
+    classics: [
+        {
+            title: "Pride and Prejudice",
+            image: "images/pride-and-prejudice.jpg",
+            price: "KES 1,100",
+            details: "book-details.html?book=pride-and-prejudice"
+        },
+        {
+            title: "Crime and Punishment",
+            image: "images/crime-and-punishment.jpg",
+            price: "KES 1,300",
+            details: "book-details.html?book=crime-and-punishment"
+        },
+        {
+            title: "To Kill a Mockingbird",
+            image: "images/to-kill-a-mockingbird.jpg",
+            price: "KES 1,300",
+            details: "book-details.html?book=to-kill-a-mockingbird"
+        },
+        {
+            title: "As Long as the Lemon Trees Grow",
+            image: "images/as-long-as-the-lemon-trees-grow.jpg",
+            price: "KES 1,400",
+            details: "book-details.html?book=as-long-as-the-lemon-trees-grow"
+        }
+    ]
+};
