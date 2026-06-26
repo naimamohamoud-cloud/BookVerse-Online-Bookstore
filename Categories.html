@@ -69,74 +69,106 @@
         </div>
     </nav>
 
-    <div class="container my-5">
+   <div class="container my-5">
 
-        <h1 class="text-center mb-4">
-            Book Categories
-        </h1>
+    <h1 class="text-center mb-4">
+        Book Categories
+    </h1>
 
-        <p class="lead text-center mb-5">
-            Explore books by category and discover your next great read.
-        </p>
+    <p class="lead text-center mb-5">
+        Explore books by category and discover your next great read.
+    </p>
 
-        <div class="row">
+    <div class="row">
 
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>Fiction</h3>
-                        <p>
-                            Immerse yourself in imaginative stories,
-                            unforgettable characters, and exciting adventures.
-                            Includes fantasy, historical fiction, literary fiction,
-                            and contemporary novels.
-                        </p>
-                    </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100"
+                 onclick="showCategory('fiction')"
+                 style="cursor:pointer;">
+
+                <div class="card-body">
+                    <h3>Fiction</h3>
+                    <p>
+                        Immerse yourself in imaginative stories,
+                        unforgettable characters, and exciting adventures.
+                        Includes fantasy, historical fiction, literary fiction,
+                        and contemporary novels.
+                    </p>
                 </div>
-            </div>
 
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>Non-Fiction</h3>
-                        <p>
-                            Learn from real-life experiences, biographies,
-                            memoirs, and books that explore history,
-                            science, and society.
-                        </p>
-                    </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card h-100"
+                 onclick="showCategory('nonfiction')"
+                 style="cursor:pointer;">
+
+                <div class="card-body">
+                    <h3>Non-Fiction</h3>
+                    <p>
+                        Learn from real-life experiences, biographies,
+                        memoirs, and books that explore history,
+                        science, and society.
+                    </p>
                 </div>
-            </div>
 
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>Self-Development</h3>
-                        <p>
-                            Improve your habits, mindset, productivity,
-                            and personal growth with bestselling
-                            self-help and motivational books.
-                        </p>
-                    </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card h-100"
+                 onclick="showCategory('selfdevelopment')"
+                 style="cursor:pointer;">
+
+                <div class="card-body">
+                    <h3>Self-Development</h3>
+                    <p>
+                        Improve your habits, mindset, productivity,
+                        and personal growth with bestselling
+                        self-help and motivational books.
+                    </p>
                 </div>
-            </div>
 
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>Academic & Educational</h3>
-                        <p>
-                            Discover textbooks, study guides,
-                            reference materials, and educational
-                            resources for students and lifelong learners.
-                        </p>
-                    </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card h-100"
+                 onclick="showCategory('academic')"
+                 style="cursor:pointer;">
+
+                <div class="card-body">
+                    <h3>Academic & Educational</h3>
+                    <p>
+                        Discover textbooks, study guides,
+                        reference materials, and educational
+                        resources for students and lifelong learners.
+                    </p>
                 </div>
-            </div>
 
+            </div>
         </div>
 
     </div>
+
+    <hr class="my-5">
+
+    <h2 class="text-center mb-4">
+        Books in this Category
+    </h2>
+
+    <div id="categoryBooks" class="row">
+
+        <div class="col-12 text-center">
+            <p class="text-muted">
+                Click a category above to view books.
+            </p>
+        </div>
+
+    </div>
+
+</div>
 
     <footer class="text-white text-center p-3 mt-5">
         <p>&copy; 2026 BookVerse Online Bookstore. All Rights Reserved.</p>
