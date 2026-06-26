@@ -151,3 +151,41 @@ const categories = {
         }
     ]
 };
+function showCategory(category) {
+
+    const container = document.getElementById("categoryBooks");
+
+    let html = "";
+
+    categories[category].forEach(function(book) {
+
+        html += `
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+
+                    <img src="${book.image}"
+                         class="card-img-top"
+                         alt="${book.title}">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">${book.title}</h5>
+
+                        <p><strong>Price:</strong> ${book.price}</p>
+
+                        <a href="${book.details}"
+                           class="btn btn-primary">
+                           View Details
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        `;
+
+    });
+
+    container.innerHTML = html;
+
+}
