@@ -189,3 +189,34 @@ function showCategory(category) {
     container.innerHTML = html;
 
 }
+// ===============================
+// SEARCH BOOKS
+// ===============================
+
+const searchInput = document.getElementById("searchInput");
+
+if (searchInput) {
+
+    searchInput.addEventListener("keyup", function () {
+
+        const searchValue = searchInput.value.toLowerCase();
+
+        const books = document.querySelectorAll(".book-card");
+
+        books.forEach(function (book) {
+
+            const title = book.querySelector(".card-title")
+                              .textContent
+                              .toLowerCase();
+
+            if (title.includes(searchValue)) {
+                book.style.display = "";
+            } else {
+                book.style.display = "none";
+            }
+
+        });
+
+    });
+
+}
